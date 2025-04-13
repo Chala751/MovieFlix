@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieFlix - Your Movie Destination</title>
+    <link rel="stylesheet" href="index.css" />
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>MovieFlix</h1>
+      </div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2><span>Experience Movies Like Never Before</span></h2>
+        <p>Watch the latest blockbusters in premium quality</p>
+        <a href="#booking" class="btn">Book Tickets Now</a>
+      </div>
+    </section>
+
+    <section class="movies">
+      <h2 class="section-title">🎬 Now Showing</h2>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?auto=format&fit=crop&w=387&q=80" alt="Cosmic Adventure" />
+          <h3>Cosmic Adventure</h3>
+          <p>🪐 Action · Sci-Fi</p>
+          <a href="#" class="btn-small">🎟️ Book Now</a>
+        </div>
+        <div class="movie-card">
+          <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=425&q=80" alt="Mystery Island" />
+          <h3>Mystery Island</h3>
+          <p>🏝️ Adventure · Mystery</p>
+          <a href="#" class="btn-small">🎟️ Book Now</a>
+        </div>
+        <div class="movie-card">
+          <img src="https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?auto=format&fit=crop&w=387&q=80" alt="Love Story" />
+          <h3>Love Story</h3>
+          <p>❤️ Romance · Drama</p>
+          <a href="#" class="btn-small">🎟️ Book Now</a>
+        </div>
+        <div class="movie-card">
+          <img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?auto=format&fit=crop&w=870&q=80" alt="Night Hunters" />
+          <h3>Night Hunters</h3>
+          <p>🌘 Horror · Thriller</p>
+          <a href="#" class="btn-small">🎟️ Book Now</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="features">
+      <h2 class="section-title">✨ Why Choose Us</h2>
+      <div class="features-container">
+        <div class="feature fade-in">
+          <div class="feature-icon">🎬</div>
+          <h3>Premium Screens</h3>
+          <p>Crystal-clear visuals and immersive surround sound.</p>
+        </div>
+        <div class="feature fade-in delay-1">
+          <div class="feature-icon">🍿</div>
+          <h3>Delicious Snacks</h3>
+          <p>Treats and drinks to make movie time even better.</p>
+        </div>
+        <div class="feature fade-in delay-2">
+          <div class="feature-icon">💺</div>
+          <h3>Comfortable Seating</h3>
+          <p>Relax in plush seats with plenty of legroom.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="booking" class="booking">
+      <h2 class="section-title">Book Your Tickets</h2>
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="movie">Select Movie:</label>
+          <select id="movie" name="movie" required>
+            <option value="">-- Select a Movie --</option>
+            <option value="movie1">Cosmic Adventure</option>
+            <option value="movie2">Mystery Island</option>
+            <option value="movie3">Love Story</option>
+            <option value="movie4">Night Hunters</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Select Date:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="time">Select Time:</label>
+          <select id="time" name="time" required>
+            <option value="">-- Select a Time --</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="13:00">1:00 PM</option>
+            <option value="16:00">4:00 PM</option>
+            <option value="19:00">7:00 PM</option>
+            <option value="22:00">10:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tickets">Number of Tickets:</label>
+          <input
+            type="number"
+            id="tickets"
+            name="tickets"
+            min="1"
+            max="10"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>MovieFlix</h3>
+          <p>Your ultimate destination for the best movie experience.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@movieflix.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Address: 123 Cinema Street, Movie City</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MovieFlix. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
